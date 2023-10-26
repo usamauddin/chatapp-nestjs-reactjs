@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.reg-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E9F1F7;
+    position: relative;
+}
+.reg-main .form{
+     width: auto;
+     height: auto;
+     padding: 25px;
+     background-color: #131B23;
+     border-radius: 5px;
+}
+.reg-main h1{
+    color: white;
+    margin-bottom: 45px;
+    text-align: center;
+    font-weight: 500;
+}
+.reg-main input{
+    width: 100%;
+    outline: none;
+    background-color: #131B23;
+    border: none;
+    border-bottom: 2px solid #697268;
+    color: white;
+    font-size: 15px;
+}
+.reg-main .inputbox{
+    position: relative;
+    margin-bottom: 48px;
+}
+#inputbox{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -20%;
+    font-size: 13px;
+    margin-bottom: 35px;
+}
+#inputbox label{
+    margin-left: -50px;
+    font-size: 15px;
+    color: #697268;
+}
+.reg-main .inputbox label{
+    position: absolute;
+    top: -5px;
+    left: 0%;
+    color: #697268;
+    transition: 0.5s;
+}
+.reg-main .switch{
+    display: flex;
+    flex-direction: row;
+}
+.reg-main .action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reg-main .register{
+    width: 100px;
+    height: 40px;
+    background-color: #CBEF43;
+    color: black;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.reg-main .login{
+    background-color: #1B2028;
+    border: none;
+    color: #E9F1F7;
+    font-size: 17px;
+    text-decoration: underline;
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+    margin-left: 2.5px;
+}
+.reg-main .switch p{
+    color: #747474;
+    font-size: 15px;
+}
+.reg-main .inputbox input:focus + label,
+.reg-main .inputbox input:valid + label{
+    color: #2FD0CD;
+    position: absolute;
+    top: -20px;
+    left: 0%;
+    font-size: 12px;
+    
+}
+
+.reg-main .inputbox input:focus{
+    border-bottom: 2px solid #2FD0CD;
+}
+
+.name {
+    color: crimson;
+    font-size: 11px;
+    position: absolute;
+    top: 28.5%;
+    left: 40.5%;
+}
+.email {
+    color: crimson;
+    font-size: 11px;
+    position: absolute;
+    top: 39%;
+    left: 41%;
+}
+
+.password {
+    color: crimson;
+    font-size: 11px;
+    position: absolute;
+    top: 49.5%;
+    left: 40.5%;
+}

@@ -1,0 +1,33 @@
+.room {
+    max-height: 400px;
+    margin-top: 5px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.chat {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.message-box {
+    margin-left: 10px;
+}
+
+.user {
+    font-size: 15px;
+    color: #282828;
+    margin-bottom: 3px;
+}
+
+.message {
+    color: #b6aeae;
+    font-size: 13px;
+}
+
+.chat:hover,
+.chat:active {
+    background-color: rgba(0, 0, 0, 0.04);
+}

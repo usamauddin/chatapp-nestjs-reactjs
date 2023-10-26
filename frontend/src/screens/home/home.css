@@ -1,0 +1,148 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* background: red; */
+}
+
+.parent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 90vw;
+    height: 90vh;
+    background-color: #F0F2F5;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+
+.left-section {
+    width: 25vw;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+    z-index: 1;
+
+}
+
+.info-section {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 100%;
+    /* border: 2px solid black; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* .search-box {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.search-box input {
+    margin-top: 10px;
+    background-color: #F0F2F5;
+    outline: none;
+    border: none;
+    width: 90%;
+    font-size: 14px;
+} */
+
+.search-box {
+    /* border: 2px solid black; */
+    /* background-color: white; */
+    background-color: #F0F2F5;
+    padding: 13px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.search-box input {
+    background-color: #F0F2F5;
+    width: 90%;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    /* border-radius: 20px; */
+    /* border: 2px solid black; */
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* background: red;  */
+    height: 20px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #F0F2F5;
+    border-radius: 10px;
+}
+
+.icon {
+    cursor: pointer;
+    /* align-self: flex-end; */
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 15%;
+    /* align-self: flex-end; */
+    /* padding-left: 2px; */
+}
+
+.message-wrapper {
+    border: 2px solid black;
+    /* height: 300px; */
+    overflow: scroll;
+}
+
+.info .img {
+    margin-left: 10px;
+}
+
+

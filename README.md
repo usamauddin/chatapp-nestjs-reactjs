@@ -6,7 +6,7 @@ It's a Full Stack Chatting App. Uses Socket.io for real-time communication and s
 Client: React JS
 
 # Server: 
-Nest JS, Express JS
+Nest JS, Express JS, Socket io
 
 # Database: 
 Mongo DB

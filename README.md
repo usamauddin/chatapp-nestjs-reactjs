@@ -3,10 +3,13 @@
 It's a Full Stack Chatting App. Uses Socket.io for real-time communication and stores users in Mongo DB Database.
 
 # Tech Stack
-Client: React JS
+Client: 
+React JS
 
-# Server: 
-Nest JS, Express JS, Socket io
+Server: 
+Nest JS, 
+Express JS, 
+Socket io
 
 # Database: 
 Mongo DB

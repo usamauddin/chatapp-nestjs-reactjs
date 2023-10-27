@@ -65,7 +65,7 @@ function Chat({ showChat, id }) {
             setLoading(true)
         }
         try {
-            const res = await axios.get(`${URL}/privatemessage/get/${chat._id}`)
+            const res = await axios.get(`${URL}/message/get/${chat._id}`)
             if (res.data) {
                 setMessages(res.data)
                 socket.emit('joinRoom', chat._id)
@@ -83,7 +83,7 @@ function Chat({ showChat, id }) {
             alert('Message is empty')
         }
         else {
-            await axios.post(`${URL}/privatemessage/post`, { senderId: id, message: text, chatId: chat._id, type: 'text' })
+            await axios.post(`${URL}/message/post`, { senderId: id, message: text, chatId: chat._id, type: 'text' })
                 .then(res => {
                     socket.emit('chatToServer', res.data)
                     setText('')
@@ -105,7 +105,7 @@ function Chat({ showChat, id }) {
         console.log(file)
         const result = await postImage(file)
         console.log(result)
-        await axios.post(`${URL}/privatemessage/post`, { senderId: id, message: result, chatId: chat._id, type: 'image' })
+        await axios.post(`${URL}/message/post`, { senderId: id, message: result, chatId: chat._id, type: 'image' })
             .then(res => {
                 socket.emit('chatToServer', res.data)
                 setText('')

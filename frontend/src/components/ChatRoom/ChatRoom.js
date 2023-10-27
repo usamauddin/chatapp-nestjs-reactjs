@@ -21,7 +21,7 @@ function ChatRoom({ getData }) {
     // console.log(allChatRoom)
     useEffect(() => {
         setLoading(true)
-        axios.get(`${URL}/privatechat/get/${id}`)
+        axios.get(`${URL}/chat/get/${id}`)
             .then(res => {
                 const data = res.data
                 // console.log(res.data)

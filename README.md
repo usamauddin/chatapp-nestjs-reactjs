@@ -1,6 +1,6 @@
 # chatapp-nestjs-reactjs
 It’s a cutting-edge one-on-one chat app that offers real-time messaging, secure user authentication, and message history storage in MongoDB. Users can seamlessly send both text and images. With an intuitive ReactJS design, it uses a robust technology stack including Socket.IO, NestJS, and Firebase
-Note: Can't deploy because free resources did not support socket server  
+Note: It's not deployed because free resources did not support socket server  
 
 # Tech Stack
 Client: 
